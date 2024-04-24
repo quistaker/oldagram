@@ -73,8 +73,8 @@ for (let i = 0; i < posts.length; i++) {
     
     avatarEl.src = posts[i].avatar
     postImageEl.src = posts[i].post
-    iconCommentEl.src = "images/icon-comment.png"
-    iconDMEl.src = "images/icon-dm.png"
+    iconCommentEl.src = "./images/icon-comment.png"
+    iconDMEl.src = "/images/icon-dm.png"
     iconLikeEl.src = "images/icon-heart.png"
     
     pNameEl.textContent = posts[i].name
