@@ -36,6 +36,7 @@ for (let i = 0; i < posts.length; i++) {
     const postHeaderEl = document.createElement("div")
     const innerDivEl = document.createElement("div")
     const iconDivEl = document.createElement("div")
+    const divider = document.createElement("div")
     
     const avatarEl = document.createElement("img")
     const postImageEl = document.createElement("img")
@@ -57,6 +58,7 @@ for (let i = 0; i < posts.length; i++) {
     sectionEl.classList.add("container")
     postHeaderEl.classList.add("post-header")
     iconDivEl.classList.add("icon-container")
+    divider.classList.add("divider")
     
     avatarEl.classList.add("avatar")
     avatarEl.classList.add("post-avatar")
@@ -98,6 +100,7 @@ for (let i = 0; i < posts.length; i++) {
             sectionEl.appendChild(commentEl)
                 commentEl.appendChild(nicknameEl)
                 commentEl.appendChild(textnode)
+    document.body.appendChild(divider)
 
     postImageEl.addEventListener("dblclick", plusLike)
 
